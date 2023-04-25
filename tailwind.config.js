@@ -5,19 +5,22 @@ module.exports = {
 		container: {
 			center: true,
 			padding: '1rem',
-			screens: {
-				lg: '1124px',
-				xl: '1124px',
-				'2xl': '1124px',
-			},
 		},
 		extend: {
 			colors: {
 				'Robo-darkBlue': '#161735',
 				'Robo-lightBlue': '#1b6ef0',
+				'Robo-blue': '#00d0f5',
+			},
+			backgroundImage: {
+				'Robo-bg': 'linear-gradient(to right, #237ece, #051b88',
 			},
 		},
+		fontFamily: {
+			Saira: 'Saira,Manrope',
+		},
 	},
+
 	plugins: [],
 };
 
