@@ -58,49 +58,51 @@
 
 		<!-- NAvbar -->
 		<!-- logo and mneu items -->
-		<div class="flex py-3 justify-between px-6 shadow-md bg-gray-100 relative lg:py-8 lg:px-5">
-			<div class="max-w-[120px] lg:max-w-[200px]">
-				<img src="./imgs/logo.png" alt="" />
+		<div class="flex py-3 justify-between items-center px-6 shadow-robo-shadow bg-gray-50 relative  lg:sticky lg:py-6 lg:px-8 ">
+			<!-- logo -->
+			<div class="max-w-[120px] lg:max-w-[200px] lg:gap-x-8 ">
+				<img src="./imgs/logo.png" alt="" class="cursor-pointer"/>
 			</div>
 
 			<!--  large screen menu lists -->
-			<div class="hidden lg:block">
-				<ul class="flex items-center space-x-6">
-					<div class="flex items-center space-x-2">
-						<li><a href="">Home</a></li>
+			
+				<div class="hidden  lg:flex font-semibold text-Robo-gray ">
+				<ul class="flex items-center space-x-5">
+					<div class="flex items-center space-x-2 hover:text-Robo-blue">
+						<li class=""><a href="">Home</a></li>
 						<i class="fa-solid fa-angle-down"></i>
 					</div>
-					<li><a href="">About Us</a></li>
-					<div class="flex items-center space-x-2">
+					<li class="hover:text-Robo-blue"><a href="">About Us</a></li>
+					<div class="flex items-center space-x-2 hover:text-Robo-blue">
 						<li><a href="">Pages</a></li>
 						<i class="fa-solid fa-angle-down"></i>
 					</div>
-					<div class="flex items-center space-x-2">
+					<div class="flex items-center space-x-2 hover:text-Robo-blue">
 						<li><a href="">Services</a></li>
 						<i class="fa-solid fa-angle-down"></i>
 					</div>
-					<div class="flex items-center space-x-2">
+					<div class="flex items-center space-x-2 hover:text-Robo-blue">
 						<li><a href="">Projects</a></li>
 						<i class="fa-solid fa-angle-down"></i>
 					</div>
-					<div class="flex items-center space-x-2">
+					<div class="flex items-center space-x-2 hover:text-Robo-blue">
 						<li><a href="">Blog</a></li>
 						<i class="fa-solid fa-angle-down"></i>
 					</div>
-					<div class="flex items-center space-x-2">
-						<li><a href="">Contact Us</a></li>
-						<i class="fa-solid fa-angle-down"></i>
-					</div>
+						<li class="hover:text-Robo-blue"><a href="">Contact Us</a></li>
 				</ul>
-				<div class="arrow Robo-bg">
-				<i class="text-2xl fa-solid fa-arrow-right"></i>
-				</div>
+				
+				
 				
 			</div>
-			
-			
+			<!-- Arrow -->
+			<div class=" hidden  justify-center space-x-8 items-center bg-gradient-to-r from-gradient-right to-gradient-left text-white py-2 px-3 lg:flex lg:pl-0 xl:pl-4">
+				<a href="" class="font-semibold lg:hidden xl:block ">Get A Quote</a>
+				<i class="text-2xl fa-solid fa-arrow-right bg-white text-Robo-lightBlue px-3 py-2"></i>
+				</div>
+				
 			<!-- Hamburger menu -->
-			<div class="flex justify-center items-center">
+			<div class="flex justify-center items-center ">
 				<!-- Hamburger Icon -->
 				<button id="hamburger" class="block hamburger lg:hidden focus:outline-none">
 					<span class="hamburger-top bg-Robo-blue"></span>
@@ -109,9 +111,12 @@
 				</button>
 			</div>
 		</div>
+			
+			
+		</div>
 		<!-- Menu items  -->
 		<nav id="menu" class="hidden absolute w-full px-5">
-			<ul class="space-y-4 py-2 font-medium w-full">
+			<ul class="space-y-4 py-2 font-medium w-full bg-white px-4 ">
 				<div class="flex justify-between py-1 border-b border-gray-300">
 					<li class=""><a href="">Home</a></li>
 					<i class="fa-solid fa-plus"></i>
@@ -135,13 +140,88 @@
 				</div>
 				
 			</ul>
-			<div class="arrow Robo-bg">
-				<i class="text-2xl fa-solid fa-arrow-right"></i>
-				</div>
+			
 		</nav>
 		
+
 	</div>
 		
+	<!-- Hero Section -->
+	<div class=" flex flex-col  py-10 bg-[url('/imgs/banner-bg-1.jpg')] bg-no-repeat bg-cover px-3 gap-y-10 lg:flex-row  lg:gap-x-2 font-Manrope">
+		<!-- left -->
+		<div class="left flex flex-col  flex-1  gap-y-6 justify-center text-center text-white sm:px-10 lg:text-left lg:space-y-3 lg:px-3">
+<h2 class="lg:text-2xl">Artificial Intelligence and Robotics</h2>
+<h1 class="text-3xl font-semibold lg:text-6xl ">A Solution That Will Enable Your Run to Business Better.</h1>
+<p class="lg:text-xl">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sunt officia deserunt mollit anim</p>
+<div class="flex justify-center lg:justify-start"><div class=" flex w-[13rem]   justify-center gap-x-3  items-center bg-white  text-Robo-lightBlue py-2 ">
+				<a href="" class="font-semibold">Discover More</a>
+				<i class="text-2xl fa-solid fa-arrow-right bg-gradient-to-r from-gradient-right to-gradient-left text-white px-3 py-2"></i>
+				</div></div>
+		</div>
+		<div class="right flex justify-center items-center">
+			<img src="./imgs/robo.png" alt="">
+		</div>
+	</div>
+
+	<!-- Section Company benefits -->
+<div class="py-14  bg-gray-100 font-Manrope  ">
+	<div class="flex flex-col justify-center items-center space-y-4 text-center container">
+		<span class="uppercase text-Robo-blue">
+		Company Benefits
+	</span>
+	<h2 class="text-2xl font-bold lg:text-4xl ">We Provide Best Robotics For Business 25 Years We Provide  Solutions</h2>
+	</div>
+
+
+	<!-- Cards -->
+	<div class="mt-10  grid gap-y-10 grid-cols-1 sm:grid-cols-2 md:grid-col-3 lg:grid-cols-4 font-Manrope">
+		<!-- Card 1 -->
+		<div class="flex flex-col items-center bg-white mx-4 px-4 py-5 gap-y-5 text-center shadow-sm rounded-md">
+			<div class="bg-white px-4 py-5 shadow-2xl rounded-full ">
+				<img src="./imgs/diamond.png" class="h-full w-full">
+			</div>
+			<div class="flex  flex-col gap-y-4	">
+				<h3 class="font-bold text-xl ">Quality Service</h3>
+				<p>Duis aute irure dolor cillum dolore eu fugiat Excepteur sint occaecat cillum dolore eu</p>
+
+			</div>
+		</div>
+		<!-- Card 2 -->
+		<div class="flex flex-col items-center bg-white mx-4 px-4 py-5 gap-y-5 text-center shadow-md">
+			<div class="bg-white px-4 py-5 shadow-2xl rounded-full ">
+				<img src="./imgs/team.png" class="h-full w-full">
+			</div>
+			<div class="flex  flex-col gap-y-4	">
+				<h3 class="font-bold text-xl">Expert Team</h3>
+				<p>Duis aute irure dolor cillum dolore eu fugiat Excepteur sint occaecat cillum dolore eu</p>
+
+			</div>
+		</div>
+		<!-- Card 3 -->
+		<div class="flex flex-col items-center bg-white mx-4 px-4 py-5 gap-y-5 text-center shadow-md">
+			<div class="bg-white px-4 py-5 shadow-2xl rounded-full ">
+				<img src="./imgs/support.png" class="h-full w-full">
+			</div>
+			<div class="flex  flex-col gap-y-4	">
+				<h3 class="font-bold text-xl">Excellent Support</h3>
+				<p>Duis aute irure dolor cillum dolore eu fugiat Excepteur sint occaecat cillum dolore eu</p>
+
+			</div>
+		</div>
+		<!-- Card 1 -->
+		<div class="flex flex-col items-center bg-white mx-4 px-4 py-5 gap-y-5 text-center shadow-md">
+			<div class="bg-white px-4 py-5 shadow-2xl rounded-full ">
+				<img src="./imgs/management.png" class="h-full w-full">
+			</div>
+			<div class="flex  flex-col gap-y-4	">
+				<h3 class="font-bold text-xl">Management</h3>
+				<p>Duis aute irure dolor cillum dolore eu fugiat Excepteur sint occaecat cillum dolore eu</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+	 
 
 		<script src="app.js"></script>
 	</body>
