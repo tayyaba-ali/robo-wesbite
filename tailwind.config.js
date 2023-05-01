@@ -20,6 +20,7 @@ module.exports = {
 				'Robo-gray': '#2e2e2e',
 				'gradient-right': '#237ece',
 				'gradient-left': '#051b88',
+				'img-bg': 'rgba(0, 0, 0, 0.2)',
 			},
 			boxShadow: {
 				'robo-shadow': '0 0 20px 3px rgba(0, 0, 0, 0.05)',
@@ -27,7 +28,7 @@ module.exports = {
 		},
 		fontFamily: {
 			Saira: 'Saira,Manrope',
-			Manrope:"Manrope"
+			Manrope: 'Manrope',
 		},
 	},
 

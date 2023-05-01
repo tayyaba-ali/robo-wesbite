@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* Hamburger Menu */
 .hamburger {
   cursor: pointer;
@@ -49,4 +50,69 @@
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+ /* Hover Styles */
+.hover-style {
+  position: relative;
+  transition: all ease 0.5s;
+  z-index: 1;
+}
+.hover-style::before, .hover-style::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #00d0f5;
+  right: 0;
+  top: 0;
+  transition-delay: 0.2s;
+  border-radius: 4px;
+  z-index: -1;
+}
+.hover-style::after {
+  right: auto;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  transition-delay: 0.6s;
+}
+.hover-style .inner-border {
+  display: block;
+}
+.hover-style .inner-border::before, .hover-style .inner-border::after {
+  content: "";
+  width: 2px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #00d0f5;
+  transition-delay: 0s;
+  left: 0;
+  top: 0;
+  border-radius: 4px;
+  z-index: -1;
+}
+.hover-style .inner-border::after {
+  transition-delay: 0.4s;
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.hover-style:hover::before {
+  width: 100%;
+  transition-delay: 0.4s;
+}
+.hover-style:hover::after {
+  width: 100%;
+  transition-delay: 0s;
+}
+.hover-style:hover .inner-border::before {
+  height: 100%;
+  transition-delay: 0.6s;
+}
+.hover-style:hover .inner-border::after {
+  height: 100%;
+  transition-delay: 0.2s;
 }
