@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['*'],
+	content: [  "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		container: {
 			center: true,
@@ -21,6 +22,10 @@ module.exports = {
 				'gradient-right': '#237ece',
 				'gradient-left': '#051b88',
 				'img-bg': 'rgba(0, 0, 0, 0.2)',
+				'card-color': '#3685d1',
+				'icon-bg': '#6da5dc',
+				'card-border': '#a1bee3',
+				'arrow-bg': '#ffffff',
 			},
 			boxShadow: {
 				'robo-shadow': '0 0 20px 3px rgba(0, 0, 0, 0.05)',
@@ -32,7 +37,8 @@ module.exports = {
 		},
 	},
 
-	plugins: [],
+	plugins: [require('tw-elements/dist/plugin.cjs')],
+	darkMode: 'class',
 };
 
 ;

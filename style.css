@@ -1,118 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
+
+@layer base {
+  /* html {
+    @apply text-neutral-800;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-neutral-800;
+  } */
+}
+
 @tailwind components;
 @tailwind utilities;
 
-
 /* Hamburger Menu */
 .hamburger {
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  transition: all 0.25s;
-  position: relative;
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	transition: all 0.25s;
+	position: relative;
 }
 
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 2px;
-  background:"#00d0f5";
-  transform: rotate(0);
-  transition: all 0.5s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 2px;
+	background: '#00d0f5';
+	transform: rotate(0);
+	transition: all 0.5s;
 }
 
 .hamburger-middle {
-  transform: translateY(7px);
+	transform: translateY(7px);
 }
 
 .hamburger-bottom {
-  transform: translateY(14px);
+	transform: translateY(14px);
 }
 
 .open {
-  transform: rotate(90deg);
-  transform: translateY(0px);
+	transform: rotate(90deg);
+	transform: translateY(0px);
 }
 
 .open .hamburger-top {
-  transform: rotate(45deg) translateY(6px) translate(6px);
+	transform: rotate(45deg) translateY(6px) translate(6px);
 }
 
 .open .hamburger-middle {
-  display: none;
+	display: none;
 }
 
 .open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(6px) translate(-6px);
+	transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
- /* Hover Styles */
+/* Hover Styles */
 .hover-style {
-  position: relative;
-  transition: all ease 0.5s;
-  z-index: 1;
+	position: relative;
+	transition: all ease 0.5s;
+	z-index: 1;
 }
-.hover-style::before, .hover-style::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  position: absolute;
-  transition: all 0.2s linear;
-  background: #00d0f5;
-  right: 0;
-  top: 0;
-  transition-delay: 0.2s;
-  border-radius: 4px;
-  z-index: -1;
+.hover-style::before,
+.hover-style::after {
+	content: '';
+	width: 0;
+	height: 2px;
+	position: absolute;
+	transition: all 0.2s linear;
+	background: #00d0f5;
+	right: 0;
+	top: 0;
+	transition-delay: 0.2s;
+	border-radius: 4px;
+	z-index: -1;
 }
 .hover-style::after {
-  right: auto;
-  left: 0;
-  top: auto;
-  bottom: 0;
-  transition-delay: 0.6s;
+	right: auto;
+	left: 0;
+	top: auto;
+	bottom: 0;
+	transition-delay: 0.6s;
 }
 .hover-style .inner-border {
-  display: block;
+	display: block;
 }
-.hover-style .inner-border::before, .hover-style .inner-border::after {
-  content: "";
-  width: 2px;
-  height: 0;
-  position: absolute;
-  transition: all 0.2s linear;
-  background: #00d0f5;
-  transition-delay: 0s;
-  left: 0;
-  top: 0;
-  border-radius: 4px;
-  z-index: -1;
+.hover-style .inner-border::before,
+.hover-style .inner-border::after {
+	content: '';
+	width: 2px;
+	height: 0;
+	position: absolute;
+	transition: all 0.2s linear;
+	background: #00d0f5;
+	transition-delay: 0s;
+	left: 0;
+	top: 0;
+	border-radius: 4px;
+	z-index: -1;
 }
 .hover-style .inner-border::after {
-  transition-delay: 0.4s;
-  left: auto;
-  right: 0;
-  top: auto;
-  bottom: 0;
+	transition-delay: 0.4s;
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 0;
 }
 .hover-style:hover::before {
-  width: 100%;
-  transition-delay: 0.4s;
+	width: 100%;
+	transition-delay: 0.4s;
 }
 .hover-style:hover::after {
-  width: 100%;
-  transition-delay: 0s;
+	width: 100%;
+	transition-delay: 0s;
 }
 .hover-style:hover .inner-border::before {
-  height: 100%;
-  transition-delay: 0.6s;
+	height: 100%;
+	transition-delay: 0.6s;
 }
 .hover-style:hover .inner-border::after {
-  height: 100%;
-  transition-delay: 0.2s;
+	height: 100%;
+	transition-delay: 0.2s;
 }
+
+
